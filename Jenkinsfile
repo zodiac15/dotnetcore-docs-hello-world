@@ -2,7 +2,7 @@ pipeline {
     agent {
         docker { 
             // Using 8.0 LTS for maximum compatibility with the Azure sample app
-            image 'mcr.microsoft.com/dotnet/sdk:8.0'
+            image 'mcr.microsoft.com/dotnet/sdk:10.0'
             
             // -u root: Grants file write permissions for the workspace
             // -e HOME=/tmp -e DOTNET_CLI_HOME=/tmp: Fixes the Jenkins SDK pathing bug
